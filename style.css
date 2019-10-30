@@ -1,0 +1,78 @@
+input[type=text], input[type=number], input[type=submit], select {
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 7px;
+	outline: none;
+}
+
+.search-result {
+	width: 548px;
+	margin: 0 auto;
+}
+
+@media (max-width:800px) { 
+	.nums-paging-buttons {
+		display: none;
+	}
+	
+	.search-result {
+		width: min-content;
+		margin: 0 auto;
+	}
+}
+
+.search-container {
+	margin: 10px;
+	padding: 20px;
+	background: #eeeeee;
+	border: 6px solid black;
+	border-radius: 10px;
+}
+
+.container {
+	width: 100%;
+}
+
+.paging-buttons {
+	width: max-content;
+	margin: 10px auto;
+	padding: 10px 20px;
+}
+
+.current {
+	background: #99ff99;
+}
+
+.disabled {
+	display: none;
+}
+
+.planet-info {
+	display: inline-block;
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 200px;
+	padding: 10px 30px;
+	margin: 5px;
+}
+
+a {
+	padding: 10px;
+	background-color: #aaaaff;
+	color: #000000;
+	text-decoration: none;
+	border: 2px solid black;
+	font-weight: bold;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+a:hover {
+	background: #8888dd;
+	color:white;
+}
+
+a:focus {
+	background: #8888dd;
+	color:white;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kepler</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Find exoplanets</h1>
+        <form>
+            <h3>Name</h3>
+            <input placeholder="planet name" type="text" id="planet-name">
+            <hr>
+            <h3>Radius</h3>
+            <input placeholder="min radius" type="number" id="min-radius">
+            <input placeholder="max radius" type="number" id="max-radius">
+            <hr>
+            <h3>Disposition</h3>
+            <select id="disposition">
+                <option value="any">Any</option>
+                <option value="CANDIDATE">Candidate</option>
+                <option value="FALSE POSITIVE">False Positive</option>
+                <option value="NOT DISPOSITIONED">Not Dispositioned</option>
+                <option value="CONFIRMED">Confirmed</option>
+            </select>
+            <input type="submit" value="Search" id="search-button">
+        </form>
+    </div>
+    <div class="container">
+		<div class="search-result" id="search-result"></div>
+        <div class="paging-buttons">
+			<span id="backward-paging-buttons" class="disabled">
+				<a href="#" onclick="first()">First</a>
+				<a href="#" onclick="previus()">Previus</a>
+			</span>
+			<span class="nums-paging-buttons" id="paging-buttons"></span>
+			<span id="forward-paging-buttons" class="disabled">
+				<a href="#" onclick="next()">Next</a>
+				<a href="#" onclick="last()">Last</a>
+			</span>
+		</div>
+    </div>
+	<script src="ui.js"></script>
+    <script src="nasa.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
